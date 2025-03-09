@@ -1,0 +1,7 @@
+
+create api controller : php artisan make:controller ProductController --api
+Route::apiResource('products', ProductController::class);
+
+create model with migration : php artisan make:model Products -m
+
+php artisan db:seed
